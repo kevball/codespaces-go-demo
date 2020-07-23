@@ -77,10 +77,11 @@ func handleRequests() {
     myRouter.HandleFunc("/article", createNewArticle).Methods("POST")
     myRouter.HandleFunc("/article/{id}", deleteArticle).Methods("DELETE")
     myRouter.HandleFunc("/article/{id}", returnSingleArticle)
-    log.Fatal(http.ListenAndServe(":10000", myRouter))
+    log.Fatal(http.ListenAndServe(":3000", myRouter))
 }
 
 func main() {
+	fmt.Println("Starting up")
     Articles = []Article{
         Article{Id: "1", Title: "Hello", Desc: "Article Description", Content: "Article Content"},
         Article{Id: "2", Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
