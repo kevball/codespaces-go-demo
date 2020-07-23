@@ -84,6 +84,7 @@ func main() {
 		Article{Id: "1", Title: "Hello", Desc: "Article Description", Content: "Article Content"},
 		Article{Id: "2", Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
 		Article{Id: "3", Title: "Hello 3", Desc: "Article Description", Content: "Article Content"},
+		Article{Id: "4", Title: "Hello 4", Desc: "Article Description", Content: "Article Content"},
 	}
 	handleRequests()
 }
